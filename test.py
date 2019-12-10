@@ -24,10 +24,10 @@ app.layout = html.Div(
      html.Div([
          dcc.RadioItems(id="Housingtype", value=str(1), labelStyle={'display': 'inline-block', 'padding': 10},
                         options=[{'label': "Entire home/apt", 'value': "Entire home/apt"}, {'label': "Private room", 'value': "Private room"}], )], style={'textAlign': "center", }),
-     html.Div([html.Div([dcc.Graph(id="scatter-graph", hoverData={'points': [{'customdata': '30'}]})], ), ], style={"height": 400, "width": 1600}),
-     html.Div([html.Div([dcc.Graph(id="hist-graph", clear_on_unhover=True, )], ), ], style={"height": 400, "width": 1600}),
-     html.Div([html.Div([dcc.Graph(id="hist-money", clear_on_unhover=True, )], ), ], style={"height": 400, "width": 1600}),
-     html.Div([html.Div([dcc.Graph(id="scatter-money", hoverData={'points': [{'customdata': '30'}]})], ), ], style={"height": 400, "width": 1600}),
+     html.Div([html.Div([dcc.Graph(id="scatter-graph", hoverData={'points': [{'customdata': '30'}]})], ), ], style={"height": 600, "width": 1600}),
+     html.Div([html.Div([dcc.Graph(id="hist-graph", clear_on_unhover=True, )], ), ], style={"height": 600, "width": 1600}),
+     html.Div([html.Div([dcc.Graph(id="hist-money", clear_on_unhover=True, )], ), ], style={"height": 600, "width": 1600}),
+     html.Div([html.Div([dcc.Graph(id="scatter-money", hoverData={'points': [{'customdata': '30'}]})], ), ], style={"height": 600, "width": 1600}),
      ], style={"height": 1600, "width": 1600})
 
 
