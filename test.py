@@ -16,7 +16,7 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 # Boostrap CSS.
 app.css.append_css({'external_url': 'https://codepen.io/amyoshino/pen/jzXypZ.css'})
 app.config.suppress_callback_exceptions = True
-df = pd.read_csv('listings.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/hunterjimenezsbu/DataViz/master/listings.csv')
 
 
 app.layout = html.Div(
